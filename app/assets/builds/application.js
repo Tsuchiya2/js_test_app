@@ -6802,5 +6802,14 @@
 
   // app/javascript/controllers/index.js
   application.register("hello", hello_controller_default);
+
+  // app/javascript/hoge.js
+  console.log("Hoge");
+  window.onload = function() {
+    console.log("\u30DA\u30FC\u30B8\u8AAD\u307F\u8FBC\u307F\u5B8C\u4E86");
+  };
+  document.addEventListener("turbo:load", () => {
+    console.log("turbo\u8AAD\u307F\u53D6\u308A\u5B8C\u4E86\u5F8C");
+  });
 })();
 //# sourceMappingURL=assets/application.js.map
